@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Node: Ejecutar JS actual",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+
+    {
+      "name": "Python: Ejecutar archivo actual",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    }
+
+  ]
+}
