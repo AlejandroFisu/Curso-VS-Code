@@ -9,7 +9,10 @@ print(mensaje)
 lengua = ["Python", "JavaScript", "Java", "C++", "Css"]
 for i in range(1, len(lengua) + 1):
     respuesta = input(f"Pregunta {i}: ¿Te gusta programar en {lengua[i - 1]}? (sí/no) ")
-    if respuesta.lower() == "sí":
+    respuesta_normalizada = respuesta.strip().lower()
+    es_positivo = respuesta_normalizada in ("sí", "si", "s", "yes", "y")
+
+    if es_positivo:
         if i == 1:
             print("¡Genial! Python es un lenguaje muy versátil.")
         elif i == 2:
