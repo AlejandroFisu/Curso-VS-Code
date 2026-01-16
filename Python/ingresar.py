@@ -1,2 +1,5 @@
 print('Buenos días, Ariel, todo bien?')
 input("pulsa una tecla para continuar")
+print ('¿Cómo te llamas?')
+nombre = input()
+print(f'Encantado de conocerte, {nombre}')
