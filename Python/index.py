@@ -7,6 +7,7 @@ estado = input("¿Cómo estás hoy? ")
 mensaje = "¡Me alegro de escuchar eso!" if estado.lower() == "bien" else "Espero que tu día mejore."
 print(mensaje)
 lengua = ["Python", "JavaScript", "Java", "C++", "Css"]
+
 for i in range(1, len(lengua) + 1):
     respuesta = input(f"Pregunta {i}: ¿Te gusta programar en {lengua[i - 1]}? (sí/no) ")
     respuesta_normalizada = respuesta.strip().lower()
